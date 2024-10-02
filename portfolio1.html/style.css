@@ -142,7 +142,7 @@ button:nth-child(2):hover{
 
 .circle:nth-child(2){
     width: 20rem;
-    background-image:url("/Oasis_Internship/portfolio1.html/IMG_20230506_111719.jpg");
+    background-image:url("/portfolio1.html/IMG_20230506_111719.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     border: 1rem solid white;

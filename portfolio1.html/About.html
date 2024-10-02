@@ -1,0 +1,162 @@
+<html>
+<head>
+	<title> About </title>
+
+	<!--<link rel="stylesheet" href="style.css"> -->
+    <link rel="Portfolio_website" href="portfolio_website.html">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: EB Garamond;
+        box-sizing: border-box;
+	}
+	
+	@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    .container {
+		min-height: 100vh;
+		width: 100%;
+		display: flex; 
+	}
+	
+	.navlist {
+		display: flex;
+		gap: 3.5rem;
+		height: 15vh;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		position:fixed;
+	}
+	
+	.navlist li {
+		list-style: none;
+	}
+	
+	.navlist li a {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #fff;
+		position:relative;
+		font-size: 1rem;
+	}
+
+    .navlist li a::after{
+        content: "";
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        height: .1rem;
+        left: 0;
+        bottom: -5px;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform .2s;
+    }
+
+    .navlist li a:hover::after{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    .about{
+        width: 100%;
+        padding: 78px 0px;
+        background-color: #262525;
+    }
+
+    .about img{
+        height: auto;
+        width: 420px;
+    }
+
+    .about-text{
+        width: 550px;;
+    }
+
+    .main{
+        width: 1130px;
+        max-width: 95%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .img2{
+        height: 100vh;
+        width: 300%;
+    }
+
+    .about-text h1{
+        color: #3877ff;
+        font-size: 80px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+
+    .about-text h5{
+        color: #fff;
+        font-size: 25px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+    }
+
+    span{
+        color: #5d9bee;
+    }
+
+    .about-text p{
+        color: #fcfc;
+        letter-spacing: 1px;
+        line-height: 20px;
+        font-size: 18px;
+        margin-bottom: 45px;
+    }
+
+    button{
+        border:0.1rem solid #5db9ee;
+		font-size: 1.1 rem;
+		padding: .8rem 1.5rem;
+		border-radius: .5rem;
+		cursor: pointer;
+		transition: .2s ease
+        
+    }
+
+    button:hover{
+        background-color:#5d9bee;
+		color:#262525;
+        background-color: transparent;
+		color:#5db9ee;
+    }
+
+</style>
+
+<body>
+    <div class="container">	
+		<ul class="navlist">
+			<li><a href="index.html" class="active"> Home </a></li>
+			<li><a href="#"> About </a></li> 
+			<li><a href="Contact.html"> Contact</a></li>
+		</ul>
+        <img src="/Oasis_Internship/portfolio1.html/IMG_20230506_111719.jpg" class="img2">
+        <section class="about"> 
+            <div class="main">
+                
+                <div class="about-text">
+                    <h1> About Us</h1>
+                    <h5>Developer <span> & Designer </span></h5>
+                    <p>I am a front-end Web developer. I can provide clean code and pixel perfect design.  
+                    I also make the website more & more interactive with web animation. I can provide clean 
+                    code and pixel perfect design. I also make the website more & more interactive with web
+                    animation.</p>
+                    <button type="button"> Read More</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
